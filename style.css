@@ -106,7 +106,7 @@ a.active, a:hover {
 
 @media (max-width: 858px) {
     .checkbtn {
-        display: block;
+        display: block!important;
     }
     ul {
         position: fixed;
@@ -176,6 +176,7 @@ body {
         position: absolute;
         top: 30px;
         left: 30px;
+        display: inline-block;
     }
     .nav-links {
         flex-direction: column;
