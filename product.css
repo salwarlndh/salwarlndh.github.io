@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(#FBA1B7, #FFD1DA, #FFF0F5, #FFDBAA);
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #F9F5F6;
+    padding: 20px;
+}
+
+.container p {
+    text-align: justify;
+    color: #F9F5F6;
+    padding: 10px 170px;
+}
+
+.gallery {
+    background-color: #FDE2F3;
+    padding: 50px;
+}
+
+.foto-gallery {
+    display: flex;
+    gap: 10px;
+    padding: 0px 170px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:768px) {
+    .foto-gallery {
+        flex-direction: column;
+    }
+}
