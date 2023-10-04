@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-image: linear-gradient(#CAEDFF, #FBF0B2, #FFC7EA, #D8B4F8, #CAEDFF);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* PAGE ABOUT ME */
+.home {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 35vh;
+}
+
+.text {
+    margin-top: 13%;
+}
+
+.text h1{
+    font-size: 50px;
+    color: #5C469C;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #5C469C;; 
+    line-height: 22px;
+}
+
+.text a{
+    background: #FFC7EA;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #5C469C;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.text a:hover {
+    background-color: #5C469C;
+    color: #FFC7EA;
+}
+
+.profile h1 {
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    padding-left: 250px;
+}
+
+.image {
+    bottom: 0;
+}
+
+.image img {
+    height: 55%;
+    border-radius: 50px;
+}
+
+#dark-change {
+    position: fixed;
+    width: 45px;
+    height: 22px;
+    left: 300px;
+    top: 30px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+#dark-change:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: 3px;
+    top: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    transition: 0.4s;
+}
+
+#dark-change.active:before {
+    left: 22px;
+    background: purple;
+}
+
+body.night {
+    background-image: linear-gradient(#352F44, #5C5470, #B9B4C7);
+}
+
+body.night p {
+    color: white;
+}
+
+body.night h1 {
+    color: white;
+}
+
+body.night td {
+    color: white;
+}
