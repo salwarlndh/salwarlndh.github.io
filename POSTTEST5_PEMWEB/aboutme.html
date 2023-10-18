@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style/aboutme.css">
+</head>
+
+<header>
+    <div id="dark-change"></div>
+</header>
+<body>
+
+    <section id="home">
+        <div class="home">
+            <div class="text">
+                <h1>I'm Salwa A Humairah</h1>
+                <p>College Student</p>
+                <a href="PHP/index.php">My Project</a>
+            </div> 
+        </div>
+    </section><hr><br>
+
+    <section id="profile">
+        <div class="profile">
+            <h1>Profile</h1> <br> <hr> <br>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:   </td>
+                        <td>Salwa Arlinda Humairah</td>
+                    </tr><br>
+        
+                    <tr>
+                        <td>NIM</td>
+                        <td>:   </td>
+                        <td>2209106031</td>
+                    </tr><br>
+        
+                    <tr>
+                        <td>Kelas</td>
+                        <td>:   </td>
+                        <td>Informatika A 2022</td>
+                    </tr><br>
+        
+                    <tr>
+                        <td>TTL</td>
+                        <td>:   </td>
+                        <td>Samarinda, 16 April 2005</td>
+                    </tr><br>
+        
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:   </td>
+                        <td>Jl. Damanhuri Perum Borneo Muqti 1 Blok K no 4</td>
+                    </tr>
+                </table>
+                <div class="image">
+                    <img src="assets-landpage/fotoprofil.jpg" alt="">
+                </div>
+            </div>
+            </div>
+    </section>
+    
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkmode = document.getElementById('dark-change');
+            darkmode.addEventListener('click', function(){
+            darkmode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+</html>
